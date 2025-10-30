@@ -26,17 +26,17 @@ poetry run rfbrowser init
 10 - Install xcode
 11 - Create iOS simulator
 12 - Install Appium driver: UIAutomator2 and XCUITest
-7 - Without error, try to trigger command line to run test at Run Test section
+13 - Without error, try to trigger command line to run test at Run Test section
 
 ## ▶️ Run Tests
 ### Web testing
 1 - Update the testing browser at web/resources/config/sit/env_config.robot
 2 - Run test on desktop web at poetry shell (Please update the testing browser at web/resources/config/sit/env_config.robot before trigger this command line)
-   2.1 - If you want to run test on default testing browser(chromium)
+2.1 - If you want to run test on default testing browser(chromium)
 ```bash
 poetry run robot --variable env:SIT --outputdir reports --timestampoutputs web/testcases/web_sample.robot
 ```
-   2.2 - If you want to run test on specific testing browser, example: firefox
+2.2 - If you want to run test on specific testing browser, example: firefox
 ```bash
 poetry run robot --variable env:SIT --variable browser:firefox --outputdir reports --timestampoutputs web/testcases/web_sample.robot
 ```
@@ -47,11 +47,11 @@ poetry run robot --variable env:SIT --variable browser:firefox --outputdir repor
 2 - Start Appium on terminal / Powershell
 3 - Update the information of android emulator and iOS simulator at mobile/resources/config/sit/env_config.robot
 4 - Run test on device
-  4.1 - iOS application at poetry shell (Please update the testing iOS device at mobile/resources/config/sit/env_config.robot before trigger this command line)
+4.1 - iOS application at poetry shell (Please update the testing iOS device at mobile/resources/config/sit/env_config.robot before trigger this command line)
 ```bash
 poetry run robot --variable env:SIT --variable platform:iOS --outputdir reports --timestampoutputs mobile/testcases/mobile_sample.robot
 ```
-  4.2 - Run test on android application at poetry shell (Please update the testing Android device at mobile/resources/config/sit/env_config.robot before trigger this command line)
+4.2 - Run test on android application at poetry shell (Please update the testing Android device at mobile/resources/config/sit/env_config.robot before trigger this command line)
 ```bash
 poetry run robot --variable env:SIT --variable platform:Android --outputdir reports --timestampoutputs mobile/testcases/mobile_sample.robot
 ```
