@@ -1,0 +1,23 @@
+[project]
+name = "automation-matthew"
+version = "0.1.0"
+description = "Automation with Robot Framework for mobile and web testing"
+authors = [
+    {name = "MatthewGFT",email = "matthew.hoang@gft.com"}
+]
+readme = "README.md"
+dependencies = [
+    "robotframework (>=7.3.2,<8.0.0)",
+    "robotframework-faker (>=6.0.0,<7.0.0)",
+    "robotframework-browser (>=19.10.1,<20.0.0)",
+    "robotframework-appiumlibrary (>=3.1,<4.0)",
+    "robotframework-requests (>=0.9.7,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
