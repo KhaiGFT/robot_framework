@@ -1,0 +1,6 @@
+browser/
+log.html
+output.*
+report.html
+playwright-log.txt
+reports/
